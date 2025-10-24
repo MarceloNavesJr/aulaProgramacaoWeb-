@@ -1,52 +1,63 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de usuário Laikão ONG para Cães</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ONG Laikão - Início</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Usuário</h1>
-        <nav>       
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="projeto.html">Projeto</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Quem somos</h2>
-            <p>A Laikão é uma organização sem fins lucrativos dedicada ao cuidado, proteção e adoção responsável de cães. Nosso propósito é oferecer uma nova chance para animais que foram abandonados, maltratados ou que se encontram em situação de vulnerabilidade.
-Fundada por amantes dos animais, a Laikão nasceu do desejo de transformar vidas — tanto dos cães quanto das pessoas que os acolhem. Acreditamos que cada cão merece um lar cheio de amor, carinho e respeito.</p>
-            <img src="Imagens/WhatsApp Image 2025-10-05 at 14.58.59.jpeg" alt="Voluntários em ação"
-        </section>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">🐾 Laikão</div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul id="navMenu">
+        <li><a href="index.html" class="active">Início</a></li>
+        <li><a href="projeto.html">Projetos</a></li>
+        <li><a href="cadastro.html">Seja Voluntário</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        ,<section>
-            <h2>Missão da Ong Laikão</h2>
-            <p>Nosso trabalho envolve:
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="Imagens/WhatsApp Image 2025-10-05 at 14.58.59.jpeg" alt="Cães resgatados pela Laikão">
+    <div class="hero-content">
+      <h1>Transforme Vidas com a Laikão</h1>
+      <p>Cuidamos, protegemos e encontramos lares amorosos para cães em situação de vulnerabilidade.</p>
+      <a href="cadastro.html" class="btn-primary">Quero Ajudar 🐶</a>
+    </div>
+  </section>
 
-<p>°Resgate e acolhimento de cães em situação de risco;</p>
-<p>°Tratamento veterinário e cuidados essenciais;</p>
-<p>°Adoção responsável, conectando os animais a famílias que realmente se importam</p>
-<p>°Conscientização da sociedade sobre a importância da guarda responsável e do bem-estar animal</p>
-Na Laikão, cada latido é um pedido de carinho, e cada adoção é uma história de amor que começa. Junte-se a nós nessa missão e ajude a transformar o mundo em um lugar melhor para nossos amigos de quatro patas.</p>
-        </section>
+  <!-- Quem Somos -->
+  <section class="about">
+    <h2>Quem Somos</h2>
+    <p>A Laikão é uma ONG sem fins lucrativos dedicada ao resgate, cuidado e adoção responsável de cães. Nosso propósito é oferecer uma nova chance para animais que foram abandonados, maltratados ou se encontram em situação de vulnerabilidade.</p>
+  </section>
 
-        ,<section>
-            <h2>Contato com a Ong Laikão</h2>
-            <address>
-                <p>Endereço: Rua das Patinhas, 17 - Bairro Jd. Europa - São Paulo/SP</p>
-                <p>Telefone (11) 99999-9999</p>
-                <p>Email: contato@onglaikao.org.br</p>
-            </address>
-        </section>
-    </main>
+  <!-- Missão -->
+  <section class="mission">
+    <h2>Nossa Missão</h2>
+    <ul>
+      <li>🐕 Resgatar cães em situação de risco</li>
+      <li>💉 Oferecer cuidados veterinários e abrigo</li>
+      <li>🏡 Promover adoções responsáveis</li>
+      <li>📣 Conscientizar sobre o bem-estar animal</li>
+    </ul>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 ONG Laikão</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 ONG Laikão. Todos os direitos reservados.</p>
+    <p>Feito com 🧡 para transformar vidas caninas</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+

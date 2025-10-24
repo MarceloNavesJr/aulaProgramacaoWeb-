@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Voluntário - Laikão</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">🐾 Laikão</div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <ul id="navMenu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projeto.html">Projetos</a></li>
+        <li><a href="cadastro.html" class="active">Seja Voluntário</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero hero-cadastro">
+    <div class="hero-content">
+      <h1>Seja Voluntário da Laikão</h1>
+      <p>Ajude a mudar a vida de cães que precisam de amor e cuidado.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="signup-section">
+      <h2>Formulário de Cadastro</h2>
+
+      <div class="success-message" id="successMessage">
+        ✅ Cadastro enviado com sucesso! A equipe Laikão entrará em contato.
+      </div>
+
+      <form id="volunteerForm" onsubmit="handleSubmit(event)">
+        <fieldset>
+          <legend>Dados Pessoais</legend>
+          <div class="form-group">
+            <label for="nome">Nome Completo *</label>
+            <input type="text" id="nome" required>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone *</label>
+            <input type="tel" id="telefone" placeholder="(11) 99999-9999" required>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Disponibilidade</legend>
+          <div class="form-group">
+            <label for="disponibilidade">Quando pode ajudar? *</label>
+            <select id="disponibilidade" required>
+              <option value="">Selecione...</option>
+              <option value="fins-de-semana">Fins de semana</option>
+              <option value="dias-uteis">Dias úteis</option>
+              <option value="flexivel">Horário flexível</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="area">Área de Interesse *</label>
+            <select id="area" required>
+              <option value="">Selecione...</option>
+              <option value="resgate">Resgate e cuidados</option>
+              <option value="eventos">Eventos e campanhas</option>
+              <option value="adoção">Apoio à adoção</option>
+              <option value="doações">Gestão de doações</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Mensagem</legend>
+          <div class="form-group">
+            <label for="mensagem">Por que quer ser voluntário?</label>
+            <textarea id="mensagem" placeholder="Conte um pouco sobre você..."></textarea>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn-primary">Enviar Cadastro</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ONG Laikão. Todos os direitos reservados.</p>
+    <p>Feito com 🧡 para transformar vidas caninas</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
